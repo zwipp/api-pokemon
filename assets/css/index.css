@@ -1,0 +1,76 @@
+@font-face{
+    font-family: 'Pokemon Solid';
+    src: url('../fonts/Pokemon Solid.ttf');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, div{
+    height: 100%;
+}
+
+body{
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #ffcc11;
+    text-shadow: 2px 2px 0 #2f6db5, 2px -2px 0 #2f6db5, -2px 2px 0 #2f6db5,
+    -2px -2px 0 #2f6db5, 2px 0px 0 #2f6db5, 0px 2px 0 #2f6db5,
+    -2px 0px 0 #2f6db5, 0px -2px 0 #2f6db5;
+
+    
+    background-image: url('../img/bg.png');
+    background-size: 70% 100%;
+    background-position: left;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+div{
+    background-color: #f9f9f9;
+    width: 30%;
+    border-left: 3px solid #2f6db5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div > form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+div > form > input{
+    padding: 10px;
+    border: 2px solid #2f6db5;
+    outline: none;
+    border-radius: 15px;
+    text-align: center; 
+    font-size: 22px;
+}
+
+div > form > label{
+    text-align: center;
+    font-size: 22px;
+}
+
+div > p{
+    font-size: 30px;
+    text-align: center;
+}
+
+img{
+    width: 35%;
+    height: 40%;
+    filter: brightness(0);
+    pointer-events: none;
+}
